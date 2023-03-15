@@ -82,7 +82,7 @@ button{
 }
 .cancel{
     text-decoration: none;
-    margin-left: 45px;
+    margin-left: 5px;
     color: var(--Desaturated-blue);
 }
 button:hover,
