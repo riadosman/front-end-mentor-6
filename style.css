@@ -1,0 +1,115 @@
+:root{
+    /* Primary */
+    --Pale-blue:hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+p{
+    font-size: 16px;
+}
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card{
+    background-color: white;
+    margin: 50px auto;
+    border-radius: 30px;
+    width: 400px;
+    height: 585px;
+}
+.card .hero{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 400px;
+}
+.container{
+    padding: 40px;
+    text-align: center;
+}
+.container h1{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.container p{
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--Desaturated-blue);
+}
+.plan{
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+.plan-content{
+    margin-right: 90px;
+    margin-left: 10px;
+}
+.plan-content h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.plan-content h4{
+    font-size: 1rem;
+    color: var(--Desaturated-blue);
+}
+a{
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+button{
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    margin: 20px 0;
+    font-weight: 900;
+    box-shadow: 0px 6px 13px 5px var(--Desaturated-blue);
+}
+.cancel{
+    text-decoration: none;
+    margin-left: 45px;
+    color: var(--Desaturated-blue);
+}
+button:hover,
+a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+.cancel:hover{
+    color: var(--Dark-blue);
+}
+@media (max-width:376px){
+    .card{
+        background-color: white;
+        margin: 50px auto;
+        border-radius: 30px;
+        width: 350px;
+        height: 585px;
+    }
+    .card .hero{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 350px;
+    }
+    .plan-content{
+        margin-right: 35px;
+    }
+    .cancel{
+        margin: 0;
+    }
+}
